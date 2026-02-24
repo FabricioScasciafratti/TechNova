@@ -403,14 +403,14 @@ footer{
     .nav-link{
         font-size: small;
     }
-
-}
-/* apartado para contacto */
-.info{
-    display: flex;
-    flex-flow: column;
-}
-.info-form{
-    width: 59vw;
+    /* apartado para contacto */
+    
+    .info{
+        display: flex;
+        flex-flow: column;
+    }
+    .info-form{
+        width: 59vw;
+    }
 }
 
