@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechNova</title>
+    <!-- link de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="./styles/styles.css">
 
@@ -13,33 +16,43 @@
 <body>
 
     <header>
-        <a href="./index.html" class="img-logo">
-            <img src="./assets/TechNova2-fondo-blanco.png" alt="Logo de un chip " class="logo">
-        </a>
-        <nav>
-            <ul class="navbar">
-                <li>
-                    <a href="./index.html"  class="nav-link">Inicio</a>
-                </li>
-                <li>
-                    <a href="./pages/notebook.html" class="nav-link">Notebook</a>
-                </li>
-                <li>
-                    <a href="./pages/celulares.html" class="nav-link">Celulares</a>
-                </li>
-                <li>
-                    <a href="./pages/smartwach.html" class="nav-link">Smartwach</a>
-                </li>
-                <li>
-                    <a href="./pages/tablet.html" class="nav-link">Tablet</a>
-                </li>
-                <li>
-                    <a href="./pages/contacto.html" class="nav-link">Contacto</a>
-                </li>
-            </ul>
+
+        <nav class="navbar navbar-expand-lg bg-body">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/TechNova2-fondo-blanco.png" alt="Logo de un chip " class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/notebook.html">Notebook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/celulares.html">Celulares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/smartwach.html">Smartwach</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/tablet.html">Tablet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    
+
     <main class="home">
 
         <section class="grid-container">
@@ -67,7 +80,7 @@
             </article>
 
         </section>
-        
+
         <h2>Productos destacados </h2>
         <section class="uno">
             <article class="pres-destacado">
@@ -97,7 +110,7 @@
         </section>
 
         <section class="prev">
-            <p>En TechNova nos especializamos en la venta de productos tecnológicos de última generación.</p> 
+            <p>En TechNova nos especializamos en la venta de productos tecnológicos de última generación.</p>
             <p>Nuestro objetivo es acercarte innovación, calidad y las mejores marcas en un solo lugar.</p>
         </section>
     </main>
@@ -109,12 +122,14 @@
             <ul class="redsoc-link">
                 <li>
                     <a href="https://www.facebook.com/?locale=es_LA" target="_blank">
-                        <img src="./assets/logos-red-social/facebook.png" alt="Logo de facebook" class="logos-red-social">
+                        <img src="./assets/logos-red-social/facebook.png" alt="Logo de facebook"
+                            class="logos-red-social">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/" target="_blank">
-                        <img src="./assets/logos-red-social/instagram.png" alt="Logo de instagram" class="logos-red-social">
+                        <img src="./assets/logos-red-social/instagram.png" alt="Logo de instagram"
+                            class="logos-red-social">
                     </a>
                 </li>
                 <li>
@@ -124,24 +139,27 @@
                 </li>
                 <li>
                     <a href="https://www.whatsapp.com/?lang=es" target="_blank" class="rs-wha">
-                        <img src="./assets/logos-red-social/whatsapp.png" alt="Logo de whatsapp" class="logos-red-social">
+                        <img src="./assets/logos-red-social/whatsapp.png" alt="Logo de whatsapp"
+                            class="logos-red-social">
                     </a>
                 </li>
                 <li>
                     <a href="https://x.com/?lang=es" target="_blank">
-                        <img src="./assets/logos-red-social/x.png"alt="Logo de X" class="logos-red-social">
+                        <img src="./assets/logos-red-social/x.png" alt="Logo de X" class="logos-red-social">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com/" target="_blank">
-                        <img src="./assets/logos-red-social/yt.png"alt="Logo de youtube" class="logos-red-social">
+                        <img src="./assets/logos-red-social/yt.png" alt="Logo de youtube" class="logos-red-social">
                     </a>
                 </li>
             </ul>
         </nav>
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -11,23 +11,13 @@
 /* header */
 
 header{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
     position: sticky;
     top: 0;
-    background-color: rgb(255, 255, 255);
-    height: 12vh;
-    justify-items: center;
-    align-items: center;
 }
 nav{
     grid-column: 3/6;
 }
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-}
+
 .img-logo{
     grid-column: 1/3;
 }
@@ -43,6 +33,10 @@ li{
     color: black;
     text-decoration: none;
     padding: 5px;
+}
+.navbar-collapse {
+    flex-grow: 0;
+    flex-basis: 0;
 }
 
 
@@ -111,7 +105,6 @@ li{
 }
 p{
     font-size: 1.15rem;
-    /* margin: 5px; */
 }
 
 .prev{
@@ -264,7 +257,60 @@ h2{
     align-content: center;
 }
 
-
+/* Estilos para Contacto */
+.cont{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+}
+.info{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.map{
+    height: 30vh;
+    width: auto;
+}
+.form{
+    display: flex;
+    flex-flow: column wrap;
+}
+input{
+    width: 40vw;
+    margin-top: 10px;
+}
+textarea{
+    width: 40vw;
+    margin-top: 10px;
+}
+.info-form{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+    width: 41vw;
+}
+.bor{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    height: 45vh;
+    justify-items: center;
+    align-content: center;
+}
+.dato{
+    margin-top: 20px;
+}
+.row-for{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 40vw;
+}
 
 
 
@@ -294,10 +340,10 @@ footer{
 /* Responsive Tablet*/
 
 @media (min-width:480px) and (max-width:960px){
-    header{
-        display: flex;
-        flex-flow: column;
-        height: 20vh;
+
+    .navbar-collapse {
+    flex-grow: 1;
+    flex-basis: 100%;
     }
     .uno{
         display: flex;
@@ -317,15 +363,13 @@ footer{
 .cel-7{
     align-content: center;
 }
-/* Responsie mobile */
+/* Responsive mobile */
 
 @media (min-width:300px) and (max-width:479px){
-    header{
-        display: flex;
-        flex-flow: column;
-        height: auto;
-        width: 100%;
-    } 
+    .navbar-collapse {
+    flex-grow: 1;
+    flex-basis: 100%;
+    }
     .navbar{
         display: flex;
         flex-flow: column wrap;
@@ -360,5 +404,13 @@ footer{
         font-size: small;
     }
 
+}
+/* apartado para contacto */
+.info{
+    display: flex;
+    flex-flow: column;
+}
+.info-form{
+    width: 59vw;
 }
 
