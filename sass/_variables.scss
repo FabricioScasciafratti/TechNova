@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+$fuente: Lato;
+$prev:rgb(222, 177, 243);
+$grey:rgb(246, 246, 246);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: $fuente;
+}
+
+// mixin 
+@mixin tablet {
+    @media (min-width:480px) and (max-width:960px){
+        @content;
+    }
+}
+
+@mixin mobile{
+    @media (min-width:300px) and (max-width:479px){
+        @content;
+    }
+}

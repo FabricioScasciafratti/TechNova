@@ -1,0 +1,41 @@
+@use "variables" as v;
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    .logo{
+        height: 40px;
+        width: auto;
+    }
+    .navbar-collapse {
+        flex-grow: 0;
+        flex-basis: 0;
+    }
+    .nav-link:hover{
+        color: #0d6efd;
+    }
+    .active{
+        color: #0d6efd;
+        font-weight: bold;
+        border-bottom: 2px solid #0d6efd;
+    }
+    @include v.tablet{
+        .navbar-collapse{
+            flex-grow: 1;
+            flex-basis: 100%;
+        }
+    }
+    @include v.mobile{
+        .navbar{
+            display: flex;
+            flex-flow: column wrap;
+            .navbar-collapse{
+                flex-grow: 1;
+                flex-basis: 100%;
+                .nav-link{
+                    font-size: small;
+                }
+            }
+        }
+    }
+}

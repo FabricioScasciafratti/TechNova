@@ -1,0 +1,72 @@
+@use "variables" as v;
+.home{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    .grid-2{
+        display: grid;
+        background-color: black;
+        color: white;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "img-iphone img-iphone"
+        "desc-iphone desc-iphone"
+        "img-samsung img-samsung"
+        "desc-samsung desc-samsung"
+        "img-xiaomi img-motorola"
+        "desc-xiaomi desc-motorola";
+        justify-items: center;
+        align-items: center;
+        .note-1{
+            grid-area: img-iphone;
+            .carrito{
+                width: 98vw;
+                height: auto;
+            }
+        }
+        .note-2{
+            grid-area: desc-iphone;
+            justify-items: center;
+        }
+        .cel-3{
+            grid-area: img-samsung;
+            .carrito{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .cel-4{
+            grid-area: desc-samsung;
+            justify-items: center;
+        }
+        .note-5{
+            grid-area: img-xiaomi;
+            .carrito{
+                width: 100%;
+                height: 55vh;
+                border-radius: 20px;
+            }
+        }
+        .note-6{
+            grid-area:desc-xiaomi;
+            justify-items: center;
+        }
+        .cel-7{
+            grid-area: img-motorola;
+            background-color: rgb(0, 0, 0);
+            justify-items: center;
+            .carrito{
+                height:55vh;
+                width: auto;
+                border-radius: 20px;
+            }
+        }
+        .cel-8{
+            grid-area: desc-motorola;
+            background-color: rgb(0, 0, 0);
+            height: 100%;
+            justify-items: center;
+        }
+    }
+}

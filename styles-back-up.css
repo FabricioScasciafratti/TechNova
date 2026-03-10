@@ -1,0 +1,416 @@
+/*fuente Lato*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Lato;
+} 
+
+/* header */
+
+header{
+    position: sticky;
+    top: 0;
+}
+/* nav{
+    grid-column: 3/6;
+} */
+
+/* .img-logo{
+    grid-column: 1/3;
+} */
+.logo{
+    height: 12vh;
+    width: auto;
+}
+/* li{
+    list-style: none;
+} */
+
+/* .nav-link{
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+} */
+.navbar-collapse {
+    flex-grow: 0;
+    flex-basis: 0;
+}
+
+
+/* main */
+
+.home{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* seccion del grid */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.caja-1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.caja-2{
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
+.caja-3{
+    grid-column: 1/3;
+    grid-row: 3/5;
+}
+.caja-4{
+    grid-column: 3/5;
+    grid-row: 3/5;
+}
+
+/* seccion de productos destacados */
+.uno{
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+} 
+
+.pres-destacado{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.presentacion{
+    height: auto;
+    width: 100%;
+}
+.destacados{
+    height: 40vh;
+    width: auto;
+}
+.carrito{
+    height: auto;
+    width: 100%;
+}
+p{
+    font-size: 1.15rem;
+}
+
+.prev{
+    width: 100%;
+    height: 100px;
+    justify-items: center;
+    align-content: center;
+    background-color: rgb(222, 177, 243);
+}
+h1{
+    margin: 10px;
+}
+h2{
+    margin:10px;
+}
+
+/* estilo para el html de Notebook */
+.grid-notebook{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.note-1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    justify-items: center;
+
+}
+.note-2{
+    grid-column: 3/5;
+    grid-row: 1/3;
+    padding: 0 20px 0 20px;
+}
+.note-3{
+    grid-column: 1/3;
+    grid-row: 3/5;
+    background-color: white;
+    justify-items: center;
+}
+.note-4{
+    grid-column: 3/5;
+    grid-row: 3/5;
+    background-color: white;
+    padding: 0 20px 0 20px;
+}
+.note-5{
+    grid-column: 1/3;
+    grid-row: 5/7;
+    background-color: black;
+    color: white;
+    justify-items: center;
+}
+.note-6{
+    grid-column: 3/5;
+    grid-row: 5/7;
+    background-color: black;
+    color: white;
+    height: 100%;
+    justify-items: center;
+    align-content: center;
+    padding:0px 20px 0px 20px;
+}
+/* estilos para el html de smartwach */
+.wach-1{
+    grid-column: 3/5;
+    grid-row: 5/7;
+    height: 100%;
+    justify-items: center;
+    align-content: center;
+    padding:0px 20px 0px 20px;    
+}
+.wach-2{
+    grid-column: 1/3;
+    grid-row: 5/7;
+    justify-items: center; 
+}
+/* para el html de celuares */
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.cel-3{
+    grid-column: 1/3;
+    grid-row: 3/5;
+    justify-items: center;
+}
+.cel-4{
+    grid-column: 3/5;
+    grid-row: 3/5;
+    padding: 0 20px 0 20px;
+}
+.cel-7{
+    grid-column: 1/3;
+    grid-row: 7/9;
+    background-color: rgb(31, 51, 66);
+    height: 100%;
+    justify-items: center;
+    align-content:end;
+}
+.cel-8{
+    grid-column: 3/5;
+    grid-row: 7/9;
+    background-color: rgb(32, 51, 66);
+    height: 100%;
+    justify-items: center;
+    align-content: center;
+}
+/* estilo para tablet */
+.tab-5{
+    grid-column: 1/3;
+    grid-row: 5/7;
+    background-color:rgb(246, 246, 246);
+    color: black;
+    height: 100%;
+    justify-items: center;
+    align-content: center;
+}
+.tab-6{
+    grid-column: 3/5;
+    grid-row: 5/7;
+    background-color: rgb(246, 246, 246);
+    color: black;
+    height: 100%;
+    justify-items: center;
+    align-content: center;
+}
+.tab-7{
+    grid-column: 1/3;
+    grid-row: 7/9;
+    background-color: white;
+    color: black;
+    height: 100%;
+    justify-items: center;
+    align-content: center;
+}
+.tab-8{
+    grid-column: 3/5;
+    grid-row: 7/9;
+    background-color: white;
+    height: 100%;
+    color: black;
+    justify-items: center;
+    align-content: center;
+}
+
+/* Estilos para Contacto */
+.cont{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+}
+.info{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.map{
+    height: 30vh;
+    width: auto;
+}
+.form{
+    display: flex;
+    flex-flow: column wrap;
+}
+input{
+    width: 40vw;
+    margin-top: 10px;
+}
+textarea{
+    width: 40vw;
+    margin-top: 10px;
+}
+.info-form{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+    width: 41vw;
+}
+.bor{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    height: 45vh;
+    justify-items: center;
+    align-content: center;
+}
+.dato{
+    margin-top: 20px;
+}
+.row-for{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 40vw;
+}
+
+
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    background-color: rgb(45, 60, 128);
+}
+.redsoc-link{
+    display: flex;
+    gap: 10px;
+}
+.logos-red-social{
+    height: 5vh;
+    width: auto;
+}
+.rs-wha {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+/* Responsive Tablet*/
+
+@media (min-width:480px) and (max-width:960px){
+
+    .navbar-collapse {
+    flex-grow: 1;
+    flex-basis: 100%;
+    }
+    .uno{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    footer{
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+/* apartado de notebook */
+.note-5{
+    height: 100%;
+    align-content: center;
+}
+/* apartado de celulares */
+.cel-7{
+    align-content: center;
+}
+/* Responsive mobile */
+
+@media (min-width:300px) and (max-width:479px){
+    .navbar-collapse {
+    flex-grow: 1;
+    flex-basis: 100%;
+    }
+    .navbar{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .grid-container{
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.05rem;
+    }
+    span{
+        font-size: 1.05rem;
+    }
+    p{
+        font-size:small;
+    }
+    .uno{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    footer{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .nav-link{
+        font-size: small;
+    }
+    /* apartado para contacto */
+    
+    .info{
+        display: flex;
+        flex-flow: column;
+    }
+    .info-form{
+        width: 59vw;
+    }
+}
+

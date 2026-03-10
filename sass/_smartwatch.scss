@@ -1,0 +1,57 @@
+@use "variables" as v;
+.home{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    .grid-smartwatch{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "img-iphowatch img-samwatch"
+        "des-iphowatch des-samwatch"
+        "img-xiawatch img-xiawatch"
+        "des-xiawatch des-xiawatch";
+        justify-items: center;
+        gap: 30px;
+        background-color:rgb(246, 246, 246);
+        .note-1{
+            grid-area: img-iphowatch;
+            justify-items: center;
+            .carrito{
+                width: 52vw;
+                height: auto;
+            }
+        }
+        .note-2{
+            grid-area: des-iphowatch;
+            justify-items: center;
+        }
+        .note-3{
+            grid-area: img-samwatch;
+            justify-items: center;
+            .carrito{
+                width: 30vw;
+                height: auto;
+            }
+        }
+        .note-4{
+            grid-area: des-samwatch;
+            justify-items: center;
+        }
+        .wach-1{
+            grid-area: des-xiawatch;
+            justify-items: center;
+            padding:0px 20px 0px 20px;
+        }
+        .wach-2{
+            grid-area: img-xiawatch;
+            justify-items: center;
+            .carrito{
+                width: 38vw;
+                height: auto;
+                border-radius: 15px;
+            }
+        }
+    }
+}

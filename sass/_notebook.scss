@@ -1,0 +1,56 @@
+@use "variables" as v;
+.home{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    .grid-notebook{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "img-mac img-mac"
+        "desc-mac desc-mac"
+        "img-dell img-lenovo"
+        "desc-dell desc-lenovo";
+        justify-items: center;
+        align-items: center;
+        .note-1{
+            grid-area: img-dell;
+        }
+        .note-2{
+            grid-area: desc-dell;
+            justify-items: center;
+        }
+        .note-3{
+            grid-area: img-lenovo;
+        }
+        .note-4{
+            grid-area: desc-lenovo;
+            justify-items: center;
+        }
+        .note-5{
+            grid-area: img-mac;
+            background-color: black;
+            justify-items: center;
+            .collapse{
+                justify-items: center;
+            }
+            p{
+                color: white;
+                padding: 0 60px 0 60px;
+            }
+            h2{
+                color:white
+            }
+            .carrito{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .note-6{
+            grid-area:desc-mac ;
+            justify-items: center;
+        }
+    }
+}
+
