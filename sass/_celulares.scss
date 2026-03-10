@@ -70,3 +70,43 @@
         }
     }
 }
+@include v.tablet{
+    .home{
+        .grid-2{
+            display: flex;
+            flex-flow: column wrap;
+        }
+    }
+}
+@include v.mobile{
+    .home{
+        .grid-2{
+            display: flex;
+            flex-flow: column wrap;
+            .note-1{
+                .carrito{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .cel-3{
+                .carrito{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .note-5{
+                .carrito{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .cel-7{
+                .carrito{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

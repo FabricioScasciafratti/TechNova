@@ -59,3 +59,14 @@
         background-color: rgb(222, 177, 243);
     }
 }
+@include v.mobile{
+    .cont{
+        .info{
+            display: flex;
+            flex-flow: column;
+        }
+        .info-form{
+            width: 70vw;
+        }
+    }
+}

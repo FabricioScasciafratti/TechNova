@@ -113,6 +113,34 @@ header .active {
   justify-items: center;
 }
 
+@media (min-width: 480px) and (max-width: 960px) {
+  .home .grid-2 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  .home .grid-2 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .home .grid-2 .note-1 .carrito {
+    width: 100%;
+    height: auto;
+  }
+  .home .grid-2 .cel-3 .carrito {
+    width: 100%;
+    height: auto;
+  }
+  .home .grid-2 .note-5 .carrito {
+    width: 100%;
+    height: auto;
+  }
+  .home .grid-2 .cel-7 .carrito {
+    width: 100%;
+    height: auto;
+  }
+}
 .cont {
   display: flex;
   flex-flow: column wrap;
@@ -174,6 +202,15 @@ header .active {
   background-color: rgb(222, 177, 243);
 }
 
+@media (min-width: 300px) and (max-width: 479px) {
+  .cont .info {
+    display: flex;
+    flex-flow: column;
+  }
+  .cont .info-form {
+    width: 70vw;
+  }
+}
 footer {
   display: flex;
   justify-content: space-around;
@@ -387,6 +424,32 @@ footer .redsoc-link .rs-wha {
   justify-items: center;
 }
 
+@media (min-width: 480px) and (max-width: 960px) {
+  .home .grid-notebook {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "img-mac" "desc-mac" "img-dell" "desc-dell" "img-lenovo" "desc-lenovo";
+  }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  .home .grid-notebook {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "img-mac" "desc-mac" "img-dell" "desc-dell" "img-lenovo" "desc-lenovo";
+  }
+  .home .grid-notebook .note-1 .carrito {
+    width: 100%;
+    height: auto;
+  }
+  .home .grid-notebook .note-3 .carrito {
+    width: 100%;
+    height: auto;
+  }
+  .home .grid-notebook .note-5 .carrito {
+    width: 100%;
+    height: auto;
+  }
+}
 .home {
   display: flex;
   flex-flow: column wrap;
@@ -440,6 +503,28 @@ footer .redsoc-link .rs-wha {
   border-radius: 15px;
 }
 
+@media (min-width: 300px) and (max-width: 479px) {
+  .home .grid-smartwatch {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+  .home .grid-smartwatch .note-1 .carrito {
+    width: 100%;
+    height: auto;
+  }
+  .home .grid-smartwatch .note-3 .carrito {
+    width: 100%;
+    height: auto;
+  }
+  .home .grid-smartwatch .wach-2 .carrito {
+    width: 100%;
+    height: auto;
+  }
+}
 .home {
   display: flex;
   flex-flow: column wrap;

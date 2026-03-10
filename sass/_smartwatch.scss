@@ -55,3 +55,33 @@
         }
     }
 }
+@include v.mobile{
+    .home{
+        .grid-smartwatch{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            .note-1{
+                .carrito{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .note-3{
+                .carrito{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .wach-2{
+                .carrito{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

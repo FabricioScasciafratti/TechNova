@@ -53,4 +53,52 @@
         }
     }
 }
+@include v.tablet{
+    .home{
+        .grid-notebook{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-areas: 
+            "img-mac"
+            "desc-mac"
+            "img-dell"
+            "desc-dell"
+            "img-lenovo"
+            "desc-lenovo";
+        }
+    }
+}
+@include v.mobile{
+    .home{
+        .grid-notebook{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-areas: 
+            "img-mac"
+            "desc-mac"
+            "img-dell"
+            "desc-dell"
+            "img-lenovo"
+            "desc-lenovo";
+            .note-1{
+                .carrito{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .note-3{
+                .carrito{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .note-5{
+                .carrito{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
 
