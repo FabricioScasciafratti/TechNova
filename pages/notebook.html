@@ -10,6 +10,8 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/styles.css">
+    <!-- link de AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -37,7 +39,7 @@
                             <a class="nav-link" href="./celulares.html">Celulares</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./smartwach.html">Smartwatch</a>
+                            <a class="nav-link" href="./smartwatch.html">Smartwatch</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./tablet.html">Tablet</a>
@@ -59,11 +61,11 @@
         </section>
 
         <section class="grid-notebook">
-            <article class="note-1">
+            <article class="note-1" data-aos="fade-up">
                 <h2>Dell portátil Latitude 7455</h2>
                 <img src="../assets/dell-latitude-7455-carrito2.png" alt="portatil Dell" class="carrito">
             </article>
-            <article class="note-2">
+            <article class="note-2" data-aos="fade-up">
                 <p>
                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse-desc-dell" aria-expanded="false" aria-controls="collapse-desc-dell">
@@ -98,11 +100,11 @@
                 </div>
 
             </article>
-            <article class="note-3">
+            <article class="note-3" data-aos="fade-up">
                 <h2>Lenovo ThinkPad T16 Gen 4</h2>
                 <img src="../assets/lenovo-thinkpad-t16-carrito.jpg" alt="portatil lenovo" class="carrito">
             </article>
-            <article class="note-4">
+            <article class="note-4" data-aos="fade-up">
                 <p>
                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse-desc-lenovo" aria-expanded="false" aria-controls="collapse-desc-dell">
@@ -130,16 +132,16 @@
                 </div>
             </article>
             <article class="note-5">
-                <h2>MacBook Pro</h2>
-                <p>Ahora con los chips M5, M5 Pro y M5 Max.</p>
-                <p>La serie de chips más avanzada que hemos creado para una laptop pro. Todos los chips de la línea M5
+                <h2 data-aos="fade-up">MacBook Pro</h2>
+                <p data-aos="fade-up">Ahora con los chips M5, M5 Pro y M5 Max.</p>
+                <p data-aos="fade-up">La serie de chips más avanzada que hemos creado para una laptop pro. Todos los chips de la línea M5
                     ofrecen un rendimiento de CPU descomunal en tareas monohilo y multihilo y una memoria unificada más
                     rápida para llevar la velocidad al filo de lo imposible. El almacenamiento SSD es hasta dos veces
                     más rápido que antes.12 Y gracias a los Neural Accelerators, las tareas de inteligencia artificial
                     van a mil por hora.</p>
-                <img src="../assets/macBook-pro-m5-carrito2.jpg" alt="laptops MacBook" class="carrito">
+                <img src="../assets/macBook-pro-m5-carrito2.jpg" alt="laptops MacBook" class="carrito" data-aos="fade-up">
             </article>
-            <article class="note-6">
+            <article class="note-6" data-aos="fade-up">
                 <p>
                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseWidthExample" aria-expanded="false"
@@ -227,6 +229,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <!-- script de AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

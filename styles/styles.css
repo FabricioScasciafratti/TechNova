@@ -145,7 +145,7 @@ header .active {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  background-color: rgb(246, 246, 246);
+  background-color: #f6f6f6;
 }
 .cont .info {
   display: flex;
@@ -462,7 +462,7 @@ footer .redsoc-link .rs-wha {
   grid-template-areas: "img-iphowatch img-samwatch" "des-iphowatch des-samwatch" "img-xiawatch img-xiawatch" "des-xiawatch des-xiawatch";
   justify-items: center;
   gap: 30px;
-  background-color: rgb(246, 246, 246);
+  background-color: #f6f6f6;
 }
 .home .grid-smartwatch .note-1 {
   grid-area: img-iphowatch;

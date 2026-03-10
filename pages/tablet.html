@@ -10,6 +10,8 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/styles.css">
+    <!-- link de AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -51,17 +53,17 @@
         </nav>
     </header>
     <main class="home">
-        <h1>Tablets</h1>
+        <h1 data-aos="fade-up">Tablets</h1>
         <section>
-            <p>Portabilidad, potencia y versatilidad en un solo dispositivo</p>
+            <p data-aos="fade-up">Portabilidad, potencia y versatilidad en un solo dispositivo</p>
         </section>
         <section class="grid-tab">
-            <article class="note-1">
+            <article class="note-1" data-aos="fade-up">
                 <h2>iPad Pro</h2>
                 <img src="../assets/ipad-pro-carrito.jpg" alt="tablet de apple blanca" class="carrito">
             </article>
             <article class="note-2">
-                <p>El chip M5 desafía los límites de lo que es posible con el iPad Pro para ofrecer un rendimiento y una
+                <p data-aos="fade-up">El chip M5 desafía los límites de lo que es posible con el iPad Pro para ofrecer un rendimiento y una
                     eficiencia nunca antes vistos. Un GPU de 10 núcleos de última generación con nuevos y poderosos
                     Neural Accelerators acelera a fondo las tareas de IA, desde la generación de tokens en grandes
                     modelos de lenguaje (LLM) hasta imágenes generativas. Además, el rendimiento multihilo del CPU y una
@@ -83,11 +85,11 @@
                 </p>
             </article>
 
-            <article class="cel-3">
+            <article class="cel-3" data-aos="fade-up">
                 <h2>Galaxy Tab S11 Ultra</h2>
                 <img src="../assets/galaxy-tab.jpg" alt="tablet galaxy" class="carrito">
             </article>
-            <article class="cel-4">
+            <article class="cel-4" data-aos="fade-up">
 
                 <p>
                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
@@ -122,12 +124,11 @@
                 </div>
 
             </article>
-            <article class="tab-5">
+            <article class="tab-5" data-aos="fade-up">
                 <h2>Redmi Pad Pro</h2>
                 <img src="../assets/redmi-pad-pro.jpg" alt="tablet xiaomi" class="carrito">
             </article>
-            <article class="tab-6">
-
+            <article class="tab-6" data-aos="fade-up">
                 <p>
                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse-des-tabxiaomi" aria-expanded="false" aria-controls="collapse-desc-dell">
@@ -157,13 +158,11 @@
                     </div>
                 </div>
             </article>
-
-            <article class="tab-7">
+            <article class="tab-7" data-aos="fade-up">
                 <h2>Idea Tab Pro</h2>
                 <img src="../assets/idea-tab-pro-carrito.jpg" alt="tablet lenovo" class="carrito">
             </article>
-            <article class="tab-8">
-
+            <article class="tab-8" data-aos="fade-up">
                 <p>
                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse-des-tablenovo" aria-expanded="false" aria-controls="collapse-desc-dell">
@@ -194,15 +193,12 @@
                                 todo el día, por lo que puedes permanecer concentrado sin estresarte por la carga. Puro
                                 entretenimiento, sin necesidad de descansos.Disfruta de la tranquilidad con Android™ 14 y Lenovo ZUI
                                 16. Además, con dos actualizaciones de sistema operativo hasta Android™ 16 y cuatro años de parches
-                                de seguridad, tu tablet se mantiene actualizada y segura a largo plazo.</p>
-    
+                                de seguridad, tu tablet se mantiene actualizada y segura a largo plazo.</p>    
                         </div>
                     </div>
                 </div>
             </article>
-
         </section>
-
     </main>
 
     <footer>
@@ -250,6 +246,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <!-- script de AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
