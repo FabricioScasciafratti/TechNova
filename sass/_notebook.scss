@@ -1,9 +1,21 @@
 @use "variables" as v;
 .home{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    @include v.flex-box(column,wrap,center,center);
+    .hero-notebook{
+        text-align: center;
+        padding: 70px 20px;
+        background: linear-gradient(135deg,#000,#1a1a1a);
+        color: white;
+        width: 100%;
+        h1{
+            font-size: 2.8rem;
+            font-weight: 700;
+        }
+        p{
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+    }
     .grid-notebook{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -14,8 +26,18 @@
         "desc-dell desc-lenovo";
         justify-items: center;
         align-items: center;
+        gap: 50px;
         .note-1{
             grid-area: img-dell;
+            padding: 25px;
+            .carrito{
+                width: 100%;
+                border-radius: 20px;
+                transition: transform 1s;
+                box-shadow: 0 15px 10px rgba(0,0,0,0.15);
+            } & :hover{
+                transform: scale(1.1);
+            }
         }
         .note-2{
             grid-area: desc-dell;
@@ -23,6 +45,14 @@
         }
         .note-3{
             grid-area: img-lenovo;
+            .carrito{
+                border-radius: 20px;
+                transition: all 1s ease;
+                box-shadow: 0 15px 10px rgba(0,0,0,0.15);
+                width: 100%;
+            } & :hover{
+                transform: scale(1.1);
+            }
         }
         .note-4{
             grid-area: desc-lenovo;
@@ -32,19 +62,31 @@
             grid-area: img-mac;
             background-color: black;
             justify-items: center;
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
             .collapse{
-                justify-items: center;
+                display: flex;
+                justify-content: center;
             }
             p{
+                max-width: 700px;
                 color: white;
                 padding: 0 60px 0 60px;
+                line-height: 1.6;
+                font-size: 1.2rem;
+                color: #d1d1d1;
             }
             h2{
-                color:white
+                color:white;
+                font-size: 2.5rem;
+                font-weight: 700;
             }
             .carrito{
                 width: 100%;
                 height: auto;
+                border-radius: 15px;
+                transition: transform 0.5s ease;
+            } & :hover{ 
+                transform: scale(1.02);
             }
         }
         .note-6{

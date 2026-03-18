@@ -1,22 +1,31 @@
 @use "variables" as v;
 .home{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    @include v.flex-box(column,wrap,center,center);
+    .text-intro{
+        text-align: center;
+        background-color: black;
+        color: white;
+        width: 100%;
+        p{
+            color: rgb(226, 226, 226);
+        }
+    }
     .grid-tab{
         display: grid;
+        justify-items: center;
         grid-template-columns: repeat(2,1fr);
         grid-template-areas:
         "img-ipad img-ipad"
         "des-ipad des-ipad"
-        "img-tabgalaxy des-tabgalaxy"
+        "img-tabgalaxy img-tabgalaxy"
+        "des-tabgalaxy des-tabgalaxy"
         "img-tadredmi img-ideatab"
         "des-tabredmi des-ideatab";
+        background: linear-gradient(180deg,black 0%, rgb(5, 5, 5) 50%, rgb(235, 235, 235) 70%, rgb(255, 253, 253) 100%);
         .note-1{
             grid-area: img-ipad;
-            background-color: black;
             width: 100%;
+            text-align: center;
             h2{
                 color: white;
             }
@@ -29,25 +38,26 @@
         .note-2{
             grid-area: des-ipad;
             padding: 20px;
-            background-color: black;
             color: white;
+            text-align: center;
+            max-width: 80%;
         }
         .cel-3{
             grid-area: img-tabgalaxy;
-            background-color: black;
             justify-items: center;
             color: white;
+            text-align: center;
             .carrito{
-                width: 45vw;
+                width: 100%;
                 height: auto;
                 border-radius: 20px;
             }
         }
         .cel-4{
             grid-area: des-tabgalaxy;
-            background-color: black;
             color: white;
             padding: 20px;
+            justify-items: center;
         }
         .tab-5{
             grid-area: img-tadredmi;
@@ -61,6 +71,7 @@
         .tab-6{
             grid-area: des-tabredmi;
             padding: 15px;
+            justify-items: center;
         }
         .tab-7{
             grid-area: img-ideatab;
@@ -74,6 +85,44 @@
         .tab-8{
             grid-area: des-ideatab;
             padding: 20px;
+            justify-items: center;
+        }
+    }
+}
+@include v.mobile{
+    .home{
+        .grid-tab{
+            background: linear-gradient(180deg,black 0%, rgb(5, 5, 5) 40%, rgb(218, 218, 218) 60%, rgb(255, 253, 253) 100%);
+            display: grid;
+            justify-items: center;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-areas:
+            "img-ipad"
+            "des-ipad"
+            "img-tabgalaxy"
+            "des-tabgalaxy"
+            "img-tadredmi"
+            "des-tabredmi" 
+            "img-ideatab"
+            "des-ideatab";
+            .tab-7{
+                grid-area: img-ideatab;
+                justify-items: center;
+                .carrito{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 20px;
+                }
+            }
+            .tab-5{
+                grid-area: img-tadredmi;
+                justify-items: center;
+                .carrito{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 20px;
+                }
+            }
         }
     }
 }

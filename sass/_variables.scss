@@ -22,3 +22,10 @@ $fondo:#f6f6f6;
         @content;
     }
 }
+@mixin flex-box($dir,$wr,$jc,$ai){
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: $wr;
+    justify-content: $jc;
+    align-items: $ai;
+}

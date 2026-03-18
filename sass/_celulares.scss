@@ -1,12 +1,21 @@
 @use "variables" as v;
 .home{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    @include v.flex-box(column,wrap,center,center);
+    .hero-seccion{
+        background: linear-gradient(180deg,#000000 0%,#0f0f0f 50%,#000000 100%);
+        text-align: center;
+        padding: 40px;
+        h1{
+            font-size: 3rem;
+            color: #e9e9e9;
+        }
+        p{
+            font-size: 1.2;
+            color: #b4b4b4;
+        }
+    }
     .grid-2{
         display: grid;
-        background-color: black;
         color: white;
         grid-template-columns: repeat(2,1fr);
         grid-template-areas: 
@@ -18,11 +27,19 @@
         "desc-xiaomi desc-motorola";
         justify-items: center;
         align-items: center;
+        background: linear-gradient(180deg,#000000 0%,#0f0f0f 50%,#000000 100%);
         .note-1{
             grid-area: img-iphone;
+            text-align: center;
+            padding: 20px;
             .carrito{
-                width: 98vw;
+                width: 100%;
                 height: auto;
+                border-radius: 20px;
+                transition: transform 1.3s ease;
+            }&:hover{
+                transform: translateY(-8px);
+                box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
             }
         }
         .note-2{
@@ -31,9 +48,14 @@
         }
         .cel-3{
             grid-area: img-samsung;
+            text-align: center;
             .carrito{
                 width: 100%;
                 height: auto;
+                transition: transform 1.3s ease;
+            }&:hover{
+                transform: translateY(-8px);
+                box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
             }
         }
         .cel-4{
@@ -42,10 +64,14 @@
         }
         .note-5{
             grid-area: img-xiaomi;
+            text-align: center;
             .carrito{
-                width: 100%;
+                width: auto;
                 height: 55vh;
                 border-radius: 20px;
+                transition: transform 0.5s ease;
+            }&:hover{
+                transform: scale(1.02);
             }
         }
         .note-6{
@@ -54,17 +80,19 @@
         }
         .cel-7{
             grid-area: img-motorola;
-            background-color: rgb(0, 0, 0);
             justify-items: center;
+            text-align: center;
             .carrito{
                 height:55vh;
                 width: auto;
                 border-radius: 20px;
+                transition: transform 0.5s ease;
+            }&:hover{
+                transform: scale(1.02);
             }
         }
         .cel-8{
             grid-area: desc-motorola;
-            background-color: rgb(0, 0, 0);
             height: 100%;
             justify-items: center;
         }

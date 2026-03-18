@@ -1,9 +1,6 @@
 @use "variables" as v;
 .home{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    @include v.flex-box(column,wrap,center,center);
     .grid-smartwatch{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -13,14 +10,21 @@
         "img-xiawatch img-xiawatch"
         "des-xiawatch des-xiawatch";
         justify-items: center;
-        gap: 30px;
-        background-color: v.$fondo;
+        gap: 40px;
+        background: linear-gradient(180deg,v.$fondo 0%,#f8f8f8 50% ,#ffffff 100%);
+        padding: 40px;
         .note-1{
             grid-area: img-iphowatch;
             justify-items: center;
+            text-align: center;
             .carrito{
                 width: 52vw;
                 height: auto;
+                border-radius: 20px;
+                box-shadow:0 10px 25px rgba(0,0,0,0.2);
+                transition:all .3s ease;
+            }&:hover{
+                transform:translateY(-8px);
             }
         }
         .note-2{
@@ -30,9 +34,15 @@
         .note-3{
             grid-area: img-samwatch;
             justify-items: center;
+            text-align: center;
             .carrito{
                 width: 30vw;
                 height: auto;
+                border-radius: 20px;
+                box-shadow:0 10px 25px rgba(0,0,0,0.2);
+                transition:all .3s ease;
+            }&:hover{
+                transform:translateY(-8px);
             }
         }
         .note-4{
@@ -47,10 +57,16 @@
         .wach-2{
             grid-area: img-xiawatch;
             justify-items: center;
+            max-width: 500px;
+            text-align: center;
             .carrito{
                 width: 38vw;
                 height: auto;
-                border-radius: 15px;
+                border-radius: 20px;
+                box-shadow:0 10px 25px rgba(0,0,0,0.2);
+                transition:all .3s ease;
+            }&:hover{
+                transform:translateY(-8px);
             }
         }
     }

@@ -1,8 +1,6 @@
 @use "variables" as v;
 .cont{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+    @include v.flex-box(column,wrap,center,center);
     background-color: v.$fondo;
     .info{
         display: flex;

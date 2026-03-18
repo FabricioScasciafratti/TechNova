@@ -374,6 +374,9 @@ footer{
         display: flex;
         flex-flow: column wrap;
     }
+    .nav-link{
+        font-size: small;
+    }
     .grid-container{
         display: flex;
         flex-flow: column wrap;
@@ -399,9 +402,6 @@ footer{
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
-    }
-    .nav-link{
-        font-size: small;
     }
     /* apartado para contacto */
     
