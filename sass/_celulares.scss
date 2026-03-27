@@ -61,6 +61,7 @@
         .cel-4{
             grid-area: desc-samsung;
             justify-items: center;
+            margin-top: 25px;
         }
         .note-5{
             grid-area: img-xiaomi;
@@ -77,6 +78,7 @@
         .note-6{
             grid-area:desc-xiaomi;
             justify-items: center;
+            margin-top: 25px;
         }
         .cel-7{
             grid-area: img-motorola;
@@ -95,6 +97,7 @@
             grid-area: desc-motorola;
             height: 100%;
             justify-items: center;
+            margin-top: 25px;
         }
     }
 }
